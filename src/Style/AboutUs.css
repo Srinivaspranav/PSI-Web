@@ -1,0 +1,222 @@
+
+  
+.app {
+  text-align: center;
+  background-color: #002333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+  
+  .nav {
+    background-color: #053047;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+  }
+  
+  .logo {
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .loginButton {
+    background-color: #002333;
+    color: #00ff84;
+    padding: 10px 15px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  
+  .aboutSection {
+    margin-top: 20px;
+    margin-bottom: 75px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .introductionHeading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .introductionContent {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .ourWorksSection {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .worksContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .OurFounderWordsSection {
+    background-color: #eee;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .OurFounderWordsContent {
+    flex: 1;
+    padding-right: 50px;
+  }
+
+  .OurFounderWordsParagraph {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .OurFounderWordsImageContainer {
+    flex: 1;
+  }
+
+  .OurFounderWordsImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+  .OurVisionSection {
+    background-color: #eee;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .OurVisionImageContainer {
+    flex: 1;
+  }
+
+  .OurVisionImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+
+  .OurVisionContent {
+    flex: 1;
+    padding-left: 50px;
+  }
+
+  .OurVisionParagraph {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .OurMissionSection {
+    background-color: #eee;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .OurMissionContent {
+    flex: 1;
+    padding-right: 50px;
+  }
+
+  .OurMissionParagraph {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .OurMissionImageContainer {
+    flex: 1;
+  }
+
+  .OurMissionImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+
+  .ourValuesSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .valuesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .value {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .MethodologyHeading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .MethodlogyContent {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .footer {
+    background-color: #053047;
+    color: white;
+    padding: 30px;
+    bottom: 0;
+    width: auto;
+  }
