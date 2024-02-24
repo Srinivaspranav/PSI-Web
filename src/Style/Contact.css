@@ -9,9 +9,25 @@
     display: flex;
     
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #002333ec;
+    /* box-shadow: inset 0 0 5px #002333; */
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+  }
   .pane{
     flex-direction: row;
-    display: flex;
+    display: flex;  
+    width:100vw
   }
  
   .nav {
@@ -23,6 +39,7 @@
     align-items: center;
     height: 40px;
     margin: 0;
+    width: 96vw;
     position: sticky;
   }
   
@@ -97,7 +114,8 @@
     color: white;
     padding: 30px;
     bottom: 0;
-    width: auto;
+    width: 95vw;
+    padding-left: 50px;
   }
   .verticalBox {
     height: 120vh; /* Adjust the height as needed */
@@ -116,13 +134,13 @@
     list-style-type: none;
     padding: 0;
   } */
-  
+/*   
   .footerCenter li {
     margin-bottom: 10px;
     text-align: left;
     cursor: pointer;
   
-  }
+  } */
   
   input{
     /* border: none; */

@@ -12,17 +12,18 @@
 
   ::-webkit-scrollbar {
     width: 10px;
+    height: 0px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #002333;
-    box-shadow: inset 0 0 5px #002333;
-    border-radius: 0px;
+    background: #002333ec;
+    /* box-shadow: inset 0 0 5px #002333; */
+    border-radius: 1px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #053047;
-    border-radius: 0px;
+    background: #ffffff;
+    border-radius: 10px;
   }
   .nav {
     background-color: #053047;
@@ -33,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     height: 40px;
+    width: 96%;
     position: sticky;
     top: 0px;
     z-index: 10;
@@ -91,7 +93,7 @@
     border-radius: 0.2rem;
   }
   
- @media (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
   nav .menu {
     display: flex;
     margin-top: 10px;
@@ -224,54 +226,64 @@
     text-align: center;
   }
   
-  .clubSection {
-    display: flex;
-    width:100%;
-    height:600px;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 60px;
-    margin-bottom: 70px;
-  }
+  .card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative; 
   
-  .clubCard {
-    width: 270px;
-    height: 350px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 1px 2px 6px rgba(0, 255, 132, 0.8);
-    background-color: rgba(17, 25, 40, 0.8);
-    color: #fff;
-    text-align: center;
-  }
-  
-  .clubImage {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    border-radius: 8px ;
-  }
-  
-  .clubCardContent {
-    padding: 50px;
-  }
-  
-  .clubName {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .registerButton1 {
+    margin:130px;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
     background-color: #002333;
-    color: #02ff84;
-    padding: 10px 8px;
-    overflow-y: hidden;
-    margin-top: 90px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #002333;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
 
 
 .main {
@@ -285,7 +297,8 @@
     color: white;
     padding: 30px;
     bottom: 0;
-    width: auto;
+    width: 95vw;
+    padding-left: 50px;
   }
   
   .aboutSection {

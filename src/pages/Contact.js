@@ -51,8 +51,9 @@ const ContactUs = () => {
             <input
               style={{
                 height: "300px",
+                width:"700px",
                 marginTop: "4%",
-                border: "dashed",
+                border: "double",
                 marginLeft: "0%"
               }}
               type='textarea'

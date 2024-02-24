@@ -131,26 +131,18 @@ const ProgramGrid = () => (
   </div>
 );
 
-const ClubCard = ({ imageSrc, clubName }) => (
+const ClubCard = () => {
   
-
-  <Card className='clubCard'>
-    <CardMedia
-      component="img"
-      alt={clubName}
-      image={imageSrc}
-      className='clubImage'
-      style={{width:'50px',margin:'40px',marginLeft:'40%',borderRadius:'12px',height:'50px'}}
-    />
-    <CardContent className='clubCardContent'>
-      <Typography variant="h6" className='clubName'>
-        {clubName}
-      </Typography>
-      <button className='registerButton1'><Link to="/events">Join Now </Link> </button>
-    </CardContent>
-  </Card>
-  
-);
+  return (
+    <div className="card" >
+      <div className="card-details">
+        <p className="text-title">Card title</p>
+        <p className="text-body">Here are the details of the card</p>
+      </div>
+      <button className="card-button">Join Now</button>
+    </div>
+  );
+}
 
 const MainContent = () => (
   <main className='main'>
@@ -182,7 +174,7 @@ const MainContent = () => (
     
 
      <h1>OUR CLUBS</h1>
-     <div className="clubSection" style={{
+     <div className="clubCard" style={{flexDirection:'row',display:'flex',margin:'20px',
      backgroundImage: 'url(https://media.discordapp.net/attachments/1205756212445192263/1209453048263479348/club_background.png?ex=65e6f9ed&is=65d484ed&hm=62024ebbcb2b02ba5a8a0d863ad1cafd339cd7ff775e26a6258a1e18e062cebd&=&format=webp&quality=lossless&width=1322&height=662)',
      backgroundSize: 'cover',
      backgroundRepeat: 'no-repeat',
@@ -239,7 +231,7 @@ const StatisticsSection = () => (
 
 const Footer = () => (
   
-  <footer className="footer" style={{display: 'flex', alignItems: 'left', justifyContent: 'space-between', padding: '30px' ,backgroundColor:' #053047'}}>
+  <footer className="footer" style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '30px' ,backgroundColor:' #053047'}}>
     
     <div style={{ marginRight: 'auto', textAlign: 'left' }}>
       <h2 style={{ marginBottom: '5px' }}>Contact Us</h2>
@@ -252,7 +244,7 @@ const Footer = () => (
     </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: 'auto', textAlign: 'left'}}>
       
-      <h2 style={{ marginBottom: '10px' }}>Menu</h2>
+      <h2 style={{ marginBottom: '5px' }}>Menu</h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         <li>• Home</li>
         <li>• About Us</li>

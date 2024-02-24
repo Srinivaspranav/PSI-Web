@@ -1,158 +1,114 @@
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
 import '../Style/AboutUs.css';
 
+const AboutUs = () => (
+  <div className="app">
+    {/* NavBar */}
+    <nav className='nav'>
+      <div className='logo'>
+        <img
+          alt="Logo"
+          src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&"
+          style={{ height: '30px', width: '100px' }}
+        />
+      </div>
+      <ul className='ul'>
+        <li className='li'><Link to="/">Home</Link></li>
+        <li className='li'><Link to="/programmes">Our Programmes</Link></li>
+        <li className='li'><Link to="/clubs">Clubs</Link></li>
+        <li className='li'><Link to="/about">About Us</Link></li>
+        <li className='li'><Link to="/contact">Contact Us</Link></li>
+      </ul>
+      <div className='loginButton'>Login</div>
+    </nav>
 
-const NavBar = () => (
-  <nav className='nav'>
-        <div className='logo'>
-      <img
-        alt="Logo"
-        src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&" 
-        style={{ height: '30px', width: '100px' }}  
-      />
+    {/* Image1 */}
+    <div className="imageSection">
+      <img className="image1" src="https://via.placeholder.com/1200x400" alt="About Us Banner" />
     </div>
-    <ul className='navUl'>
-      <li className= 'navLi'><Link to="/">Home</Link></li>
-      <li className='navLi'><Link to="/programmes">Our Programmes</Link></li>
-      <li className='navLi'><Link to="/clubs">Clubs</Link></li>
-      <li className='navLi'><Link to="/about">About Us</Link></li>
-      <li className='navLi'><Link to="/contact">Contact Us</Link></li>
-    </ul>
-    <div className='loginButton'>Login</div>
-  </nav>
-);
 
-const AboutSection = () => (
-  <div className='aboutSection'>
-    <div>
-      <h1 className='introductionHeading'>Introduction</h1>
-      <p className='introductionContent'>Andhra University is not just one of the oldest educational institutions in the country, but is also the first to be conceived as a residential and teaching-cum-affiliating University, mainly devoted to post-graduate teaching and research.
 
-The people of the State have an emotional attachment to the institution, since it came into being after a prolonged and collective struggle of the Telugu elite for a University in the educationally backward northern Circars and Ceded districts of the erstwhile Madras Presidency.
-
-Andhra University was constituted in the year 1926 by the Madras Act of 1926. The 97-year-old institution is fortunate to have Sir C.R. Reddy as its founder Vice-Chancellor, as the steps taken by this visionary proved to be fruitful in the long run.</p>
-    </div>
-  </div>
-);
-
-const ImageSection = ({ src, alt }) => (
-  <div>
-    <img style={{ width: '100%', height: '268px' }} src={src} alt={alt} />
-  </div>
-);
-
-const OurWorksSection = () => (
-  <div className='ourWorksSection'>
-    <h2>Our Works</h2>
-    <div className='worksContainer'>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 1" />
-      </div>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 2" />
-      </div>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 3" />
-      </div>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 4" />
-      </div>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 5" />
-      </div>
-      <div className='work'>
-        <ImageSection src="https://via.placeholder.com/150x150" alt="Work 6" />
+    {/* AboutSection */}
+    <div className="aboutSection">
+      <div className="aboutContent">
+        <h1 className="introductionHeading">Who are we?</h1>
+        <p className="introductionContent">
+          Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
+        </p>
+        <p className="introductionContent">
+          At Dr. Palamsetty Innovations, we understand the importance of staying ahead in today's rapidly evolving world. That's why we offer a range of services, including academic assistance, internship opportunities, courses, workshops, and seminars.
+        </p>
       </div>
     </div>
-  </div>
-);
+    <div style={{  }}>
+  <hr style={{ borderColor: "#00FF84", width: "95vw",boxShadow: '0px 7px 10px rgba(0, 255, 132, 0.5)' }} />
+</div>
 
-const OurFounderWordsSection = () => (
-  <div className='OurFounderWordsSection'>
-    <div className='OurFounderWordsContent'>
-      <h2>Our Founder's Words</h2>
-      <p className='OurFounderWordsParagraph'>The primary goal of education is to give the youth the training they need to become efficient citizens in this Republic. We must remember that intelligence is not enough. Intelligence plus character - that is the goal of true education.</p>
-    </div>
-    <div className='OurFounderWordsImageContainer'>
-      <img className='OurFounderWordsImage' src="https://via.placeholder.com/600x400" alt="Our Founder's Words" />
-    </div>
-  </div>
-);
-
-const OurVisionSection = () => (
-  <div className='OurVisionSection'>
-    <div className='OurVisionImageContainer'>
-      <img className='OurVisionImage' src="https://via.placeholder.com/600x400" alt="Our Vision" />
-    </div>
-    <div className='OurVisionContent'>
-      <h2>Our Vision</h2>
-      <p className='OurVisionParagraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod justo quis dolor sagittis hendrerit. Nulla facilisi. Suspendisse ut condimentum ante. Fusce sed sapien tristique, mattis urna sed, feugiat magna.</p>
-    </div>
-  </div>
-);
-
-const OurMissionSection = () => (
-  <div className='OurMissionSection'>
-    <div className='OurMissionContent'>
-      <h2>Our Mission</h2>
-      <p className='OurMissionParagraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod justo quis dolor sagittis hendrerit. Nulla facilisi. Suspendisse ut condimentum ante. Fusce sed sapien tristique, mattis urna sed, feugiat magna.</p>
-    </div>
-    <div className='OurMissionImageContainer'>
-      <img className='OurMissionImage' src="https://via.placeholder.com/600x400" alt="Our Mission" />
-    </div>
-  </div>
-);
-
-const ValuesSection = () => (
-  <div className='ourValuesSection'>
-    <h2>Our Values</h2>
-    <div className='valuesContainer'>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 1</h3>
-      </div>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 2</h3>
-      </div>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 3</h3>
-      </div>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 4</h3>
-      </div>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 5</h3>
-      </div>
-      <div className='value'>
-        <div className='circle'></div>
-        <h3>Value 6</h3>
+    {/* OurWorksSection */}
+    <div className="ourWorksSection">
+      <h2 className="worksHeading">Our Works</h2>
+      <div className="worksContainer">
+        {[1, 2, 3, 4, 5, 6].map((index) => (
+          <div key={index} className="work">
+            <div>
+              <img style={{ width: '100%', height: '268px' }} src={"https://via.placeholder.com/150x150?text=Work${index}"} alt={"image"} />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-  </div>
-);
+    <div><hr style={{ borderColor: "#00FF84", width: "95vw",  }} /></div>
 
-const MethodologySection = () => (
-  <div className='aboutSection'>
-    <h1 className='MethodologyHeading'>Our Methodlogy</h1>
-    <p className='MethodlogyContent'>Andhra University is not just one of the oldest educational institutions in the country, but is also the first to be conceived as a residential and teaching-cum-affiliating University, mainly devoted to post-graduate teaching and research. The people of the State have an emotional attachment to the institution, since it came into being after a prolonged and collective struggle of the Telugu elite for a University in the educationally backward northern Circars and Ceded districts of the erstwhile Madras Presidency. Andhra University was constituted in the year 1926 by the Madras Act of 1926. The 97-year-old institution is fortunate to have Sir C.R. Reddy as its founder Vice-Chancellor, as the steps taken by this visionary proved to be fruitful in the long run.</p>
-  </div>
-);
+    {/* OurFounderWordsSection */}
+    <div className="ourFounderWordsSection">
+      <div className="founderWordsHeading">
+        <h2>Our Founder's Words</h2>
+      </div>
+      <div className="founderWordsContent">
+        <p className="founderWordsParagraph">
+          Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
+        </p>
+        <div className="founderWordsImageContainer">
+          <img className="founderWordsImage" src="https://via.placeholder.com/600x400" alt="Our Founder's Words" />
+        </div>
+      </div>
+    </div>
+    <div><hr style={{ borderColor: "#00FF84", width: "95vw",  }} /></div>
 
-const ApproachSection = () => (
-  <div className='aboutSection'>
-    <h1 className='MethodologyHeading'>Our Approach</h1>
-    <p className='MethodlogyContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod justo quis dolor sagittis hendrerit. Nulla facilisi. Suspendisse ut condimentum ante. Fusce sed sapien tristique, mattis urna sed, feugiat magna.</p>
-  </div>
-);
+    {/* OurVisionSection */}
+    <div className="ourVisionSection">
+      <div className="visionImageContainer">
+        <img className="visionImage" src="https://via.placeholder.com/600x400" alt="Our Vision" />
+      </div>
+      <div className="visionContent">
+        <h2>Our Vision</h2>
+        <p className="visionParagraph">
+          Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
+          <br />
+          At Dr. Palamsetty Innovations, we understand the importance of staying ahead in today's rapidly evolving world. That's why we offer a range of services, including academic assistance, internship opportunities, courses, workshops, and seminars. Our goal is to equip students with the knowledge, skills, and experiences they need to thrive in their academic pursuits and transition seamlessly into the professional realm.
+        </p>
+      </div>
+    </div>
+    <div><hr style={{ borderColor: "#00FF84", width: "95vw",  }} /></div>
 
-const Footer = () => (
-  <footer className='footer' style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '30px',backgroundColor:' #053047' }}>
+    {/* ValuesSection */}
+    <div className="ourValuesSection">
+      <h2>Our Values</h2>
+      <div className="valuesContainer">
+        {[1, 2, 3, 4, 5, 6].map((index) => (
+          <div key={index} className="value">
+            <div className="circle"></div>
+            <h3>Value {index}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div><hr style={{ borderColor: "#00FF84", width: "95vw",  }} /></div>
+
+    {/* Footer */}
+    <footer className="footer" style={{display: 'flex', alignItems: 'left', justifyContent: 'space-between', padding: '30px' ,backgroundColor:' #053047'}}>
+    
     <div style={{ marginRight: 'auto', textAlign: 'left' }}>
       <h2 style={{ marginBottom: '5px' }}>Contact Us</h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -173,31 +129,41 @@ const Footer = () => (
         <li>• Contact Us</li>
       </ul>
     </div>
-    <div style={{ textAlign: 'center' ,display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
-      <div style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#ccc', marginBottom: '10px' }}></div>
-      <p>Follow us on</p>
+    <div style={{ textAlign: 'center' ,display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ width: '300px', height: '100px',   overflow: 'hidden' }}>
+  <img
+    src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&"
+    alt="Circular Image"
+    style={{ width: '270px', height: '60px', marginLeft:'25px',objectFit: 'cover' }}
+  />
+</div>
+
+      <p style={{fontSize:'1.5rem',marginTop:'5px',marginBottom:'10px'}}>Follow us on</p>
       <div style={{ display: 'flex' }}>
-        <div style={{ width: '20px', height: '20px', borderRadius: '50%', backgroundColor: '#ccc', marginRight: '5px' }}></div>
-        <div style={{ width: '20px', height: '20px', borderRadius: '50%', backgroundColor: '#ccc', marginRight: '5px' }}></div>
-        <div style={{ width: '20px', height: '20px', borderRadius: '50%', backgroundColor: '#ccc', marginRight: '5px' }}></div>
+      <div style={{ width: '40px', height: '40px', borderRadius: '30%', marginRight: '5px', overflow: 'hidden' }}>
+  <img
+    src="https://cdn.discordapp.com/attachments/1205756212445192263/1207609856513679431/image_5.png?ex=65e04552&is=65cdd052&hm=0d052c3aebd7b7df75f5f65ad8532f9fdf8f665d78f4ca2c39aa02d6522862e9&"
+    alt="GitHUB Logo"
+    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+  />
+</div>
+<div style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '5px', overflow: 'hidden' }}>
+  <img
+    src="https://cdn.discordapp.com/attachments/1205756212445192263/1207606714573258772/Google_Icons-09-512.png?ex=65e04265&is=65cdcd65&hm=e7c6d65782130976ff74cb996d7fc194e9be15803d4fba5a6daaa85a32e11fa8&"
+    alt="Circular Image"
+    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+  />
+</div>
+
+<div style={{ width: '40px', height: '40px', borderRadius: '30%', marginRight: '5px', overflow: 'hidden' }}>
+  <img
+    src="https://cdn.discordapp.com/attachments/1205756212445192263/1207609856513679431/image_5.png?ex=65e04552&is=65cdd052&hm=0d052c3aebd7b7df75f5f65ad8532f9fdf8f665d78f4ca2c39aa02d6522862e9&"
+    alt="GitHUB Logo"
+    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+  />
+</div>
       </div>
     </div>
   </footer>
-);
-
-const AboutUs = () => (
-  <div className='app'>
-    <NavBar />
-    <AboutSection />
-    <OurWorksSection />
-    <OurFounderWordsSection />
-    <OurVisionSection />
-    <OurMissionSection />
-    <ValuesSection />
-    <MethodologySection />
-    <ApproachSection />
-    <Footer />
-  </div>
-);
-
-export default AboutUs;
+      </div>
+);export default AboutUs;
